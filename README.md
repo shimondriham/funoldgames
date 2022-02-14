@@ -1,2 +1,2 @@
 # funoldgames
-fun old games
+https://funoldgames.netlify.app/index.html
