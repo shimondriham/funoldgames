@@ -5,6 +5,7 @@ let cardai = 0;
 let cardb = 0;
 let cardbi = 0;
 let win = 0;
+let waitOn = true;
 
 class MemoryGameClass {
     constructor(_parent, _id, i, memoryGameArray) {
@@ -24,7 +25,7 @@ class MemoryGameClass {
        `
         let div_flip = div.querySelector("div");
         div_flip.addEventListener("click", () => {
-            if (div_flip.className == "a flip") {
+            if (div_flip.className == "a flip" && waitOn) {
                 div_flip.style.display= "none";
                 div_flip.className = "b flip";
                 counter += 1;
@@ -34,10 +35,12 @@ class MemoryGameClass {
                     cardai = this.i;
                 }
                 if (counter == 2) {
+                    waitOn= false;
                     cardb = this.id;
                     cardbi = this.i;
                     counter = 0;
                     if (carda == cardb) {
+                        waitOn=true;
                         win += 1;
                     } else {
                         setTimeout(() => {  
@@ -46,6 +49,7 @@ class MemoryGameClass {
                             document.querySelector(`#id_flip${cardbi}`).style.display= "block";
                             document.querySelector(`#id_flip${cardbi}`).className = "a flip";
                             counter2 -= 2;
+                            waitOn=true;
                          }, 500);
                     }
                     carda = 0;
