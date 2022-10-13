@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/snackLadder.css">
+    <title>Document</title>
+    <script  src="js_snake_ladder/appSnackLadder.js"></script>
+    <script  src="js_snake_ladder/snackLadderClass.js"></script>
+    <script  src="js_snake_ladder/movPositionA.js"></script>
+    <script  src="js_snake_ladder/movPositionB.js"></script>
+</head>
+<body>
+    <main class="container text-center mb-2">
+<div class="main">
+        <h1 class="" style="font-family: 'Henny Penny', cursive;">A game of scales and snakes</h1>
+        <div id="id_row" class="row">
+        </div>
+        <div class="container text-center">
+            <h5>The purple player progressed: <span id="id_roll1">0</span></h5>
+            <h5>The white player advanced: <span id="id_roll2">0</span></h5>          
+            <button class="btn btn-success" id="roll_btn">roll</button>
+            <img class="roll" id="id_img"  src="images_dice/dice1.jpg" width="75" alt="dice">
+        </div>
+        <hr>
+        <button id="id_reset_btn" class="btn btn-danger">reset game</button> 
+        <a href="index.html"><button class="btn btn-primary">back home</button></a>
+</div>
+    </main>
+</body>
+</html>

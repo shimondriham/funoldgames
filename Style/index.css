@@ -1,0 +1,123 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position:center;
+  color:white;
+}
+header{
+    min-height: 100px;
+
+}
+main{
+  font-family: 'Moon Dance', cursive;
+}
+main h1{
+   font-size: 4em; 
+   font-weight: 900;
+}
+main h4{
+   /* font-size: 4em;  */
+   font-weight: 500;
+}
+main .bigBox{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+main .box{
+ width:30%;
+ height:100%;
+ display: flex;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ border-radius: 100%; 
+ border: rgba(255, 255, 255, 0.384) 4px solid;
+}
+main .box a{
+ font-size: 50px; 
+ font-weight: 900;
+ color: rgb(255, 255, 255);
+ text-decoration: none; 
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+main .box1{
+  background-image: url("https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-position:top; 
+}
+main .box2{
+  background-image: url("https://images.pexels.com/photos/220053/pexels-photo-220053.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-position:top; 
+}
+main .box3{
+  background-image: url("https://images.unsplash.com/photo-1642056445470-18b1da13f81f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position:top; 
+}
+
+
+footer{
+    margin-top: 100px;
+    margin-bottom: 300px;
+  }
+  footer .container{
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 70px;
+    max-width: 500px;
+    max-height: 140px;
+  }
+  footer .box img{ 
+    margin-top: 20px;
+    width: 70px;
+    transition: 800ms;
+  }
+  footer .box img:hover{
+    transform: scale(2,2);
+  }
+  footer p{
+    color: black;
+    font-size: 20px;
+    margin: 2px;
+  }
+  @media (max-width:992px){
+    main .box{
+      height: 200px;
+      }
+  }
+  @media (max-width:768px){
+    main h1{
+      font-size: 30px; 
+   }
+      main .bigBox{
+        display: block;
+        /* border: white 2px solid; */
+        padding: 2px;
+       height:100%;
+      }
+      main .box{
+        width: 250px;
+        margin:15px auto;
+         /* background: chartreuse; */
+          border-radius: 100%; 
+        
+        }
+        footer{
+          margin-top: 50px;
+          margin-bottom: 10px;
+        }
+    footer .box img{
+        width: 60px;
+        margin-top: 5px;
+      }
+      footer p{
+        font-size: 15px;
+        margin: 10px;
+      }
+  }
